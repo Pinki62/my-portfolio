@@ -49,7 +49,7 @@ export default function Home() {
 
     <section className="skills shell section" id="skills"><div className="sectionLabel">05 / TOOLKIT</div><div className="skillsHeading"><h2>Tools I use to turn<br />ideas into <em>products.</em></h2><p>Deepening my core stack every day, while steadily expanding into adjacent technologies.</p></div><div className="skillGrid">{skills.map((skill,i)=><article key={skill.name}><span>0{i+1}</span><div className={`skillIcon s${i}`}>{skill.name.slice(0,2)}</div><h3>{skill.name}</h3><p>{skill.level}</p></article>)}</div></section>
 
-    <section className="contact shell" id="contact"><span className="contactKicker">HAVE A PROJECT OR OPPORTUNITY?</span><h2>Let&apos;s build something<br /><em>worth using.</em></h2><p>I&apos;m open to thoughtful conversations, challenging work, and opportunities to grow.</p><div className="contactActions"><a className="emailBtn" href="mailto:pinkukaur0803@gmail.com">Email me <span>↗</span></a><a className="phoneLink" href="tel:+918289028136">+91 82890 28136</a></div><small>Bathinda, Punjab · Available by email or phone</small></section>
+    <section className="contact shell" id="contact"><span className="contactKicker">HAVE A PROJECT OR OPPORTUNITY?</span><h2>Let&apos;s build something<br /><em>worth using.</em></h2><p>I&apos;m open to thoughtful conversations, challenging work, and opportunities to grow.</p><div className="contactActions"><a className="emailBtn" href="mailto:pinkukaur0803@gmail.com">Email me <span>↗</span></a></div><small>Bathinda, Punjab · Available by email</small></section>
     <footer className="shell"><div className="brand"><span>PK</span><b>Pinki Kaur</b></div><p>Full Stack Web Developer · Bathinda, Punjab</p><a href="#top">Back to top ↑</a></footer>
   </main>;
 }
