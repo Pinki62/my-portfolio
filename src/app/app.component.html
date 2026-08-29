@@ -1,0 +1,54 @@
+<main>
+  <nav class="nav shell" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Pinki Kaur portfolio home"><span>PK</span><b>Pinki Kaur</b></a>
+    <div class="navLinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a></div>
+    <a class="navCta" href="mailto:pinkukaur0803@gmail.com">Let&apos;s talk <span>↗</span></a>
+  </nav>
+
+  <section class="hero shell" id="top">
+    <div class="heroCopy">
+      <div class="eyebrow"><i></i> Bathinda, Punjab · Angular Full Stack Developer</div>
+      <p class="heroName">Hello, I&apos;m Pinki Kaur.</p>
+      <h1>I build web<br>experiences that<br><em>work beautifully.</em></h1>
+      <p class="intro">Full Stack Web Developer specializing in Angular, Node.js and MongoDB—turning complex requirements into clean, dependable products.</p>
+      <div class="heroActions"><a class="primaryBtn" href="#experience">Explore my journey <span>↓</span></a><a class="textLink" href="mailto:pinkukaur0803@gmail.com">Get in touch <span>↗</span></a></div>
+      <div class="quickFacts"><div><strong>3+</strong><span>Years of industry<br>experience</span></div><div><strong>2024</strong><span>Promoted to<br>Full Stack Developer</span></div></div>
+    </div>
+    <div class="heroVisual" aria-label="Full stack technology overview">
+      <div class="orbit orbitOne"></div><div class="orbit orbitTwo"></div>
+      <div class="codeCard"><div class="codeTop"><span><i></i><i></i><i></i></span><b>pinki-kaur.ts</b><small>⌁</small></div><pre><span class="purple">const</span> developer = &#123;
+  framework: <span class="green">&quot;Angular&quot;</span>,
+  builds: [<span class="green">&quot;web&quot;</span>, <span class="green">&quot;APIs&quot;</span>],
+  mindset: <span class="green">&quot;always learning&quot;</span>
+&#125;;</pre><div class="terminal"><span>●</span> ANGULAR STATUS <b>READY TO BUILD_</b></div></div>
+      <div class="techPill pillAngular"><b>A</b><span>Angular<small>Frontend</small></span></div><div class="techPill pillNode"><b>JS</b><span>Node.js<small>Backend</small></span></div><div class="techPill pillMongo"><b>◆</b><span>MongoDB<small>Database</small></span></div><div class="floatingTag">ANGULAR</div>
+    </div>
+  </section>
+
+  <section class="marquee" aria-label="Core strengths"><div>ANGULAR <b>✦</b> NODE.JS <b>✦</b> MONGODB <b>✦</b> REST APIS <b>✦</b> RESPONSIVE WEB <b>✦</b> CLEAN CODE <b>✦</b></div></section>
+
+  <section class="about shell section" id="about"><div class="sectionLabel">01 / ABOUT</div><div class="aboutGrid"><h2>From curious trainee<br>to <em>full stack builder.</em></h2><div class="bodyCopy"><p>I&apos;m Pinki Kaur, a Full Stack Web Developer based in Bathinda, Punjab. My journey began with hands-on technical training during college, followed by a six-month Software Trainee internship at Step2Gen Pvt. Ltd.</p><p>Today at Idcle Tech LLP, I build web applications across the stack—creating interfaces with Angular, developing server-side functionality with Node.js, and working with MongoDB. I value thoughtful solutions, dependable delivery, team collaboration, and continuous learning.</p></div></div></section>
+
+  <section class="experience section" id="experience"><div class="shell"><div class="sectionLabel light">02 / EXPERIENCE</div><div class="sectionHeading"><h2>A journey of<br><em>steady growth.</em></h2><p>Every role has added another layer to how I think, build, and collaborate.</p></div><div class="timeline">
+    <article class="role current"><div class="date">JUL 2024 — PRESENT</div><div class="dot"></div><div class="roleBody"><span class="badge">CURRENT ROLE</span><h3>Full Stack Web Developer</h3><h4>Idcle Tech LLP</h4><p>Promoted after a year of consistent delivery. Building and maintaining full-stack web applications with Angular, Node.js, MongoDB, and REST APIs.</p><div class="tags"><span>Angular</span><span>Node.js</span><span>MongoDB</span><span>REST APIs</span></div></div></article>
+    <article class="role"><div class="date">JUL 2023 — JUN 2024</div><div class="dot"></div><div class="roleBody"><h3>Junior Web Developer</h3><h4>Idcle Tech LLP</h4><p>Contributed to production web applications and established a strong foundation in frontend development, backend services, databases, and collaborative delivery.</p></div></article>
+    <article class="role"><div class="date">JAN — JUL 2023</div><div class="dot"></div><div class="roleBody"><h3>Software Trainee</h3><h4>Step2Gen Pvt. Ltd.</h4><p>Completed a six-month industry internship from 2 January to 2 July 2023, gaining practical experience in software development and professional team workflows.</p></div></article>
+  </div></div></section>
+
+  <section class="projects shell section" id="projects"><div class="sectionLabel">03 / SELECTED PROJECTS</div><div class="projectsHeading"><h2>Products shaped by<br><em>real-world needs.</em></h2><p>Full-stack work spanning inventory, education, customer relationships, and small-business experiences.</p></div><div class="projectGrid">
+    @for (project of projects; track project.name) {
+      <article class="projectCard" [class.featured]="project.featured" [class.smallBuilds]="project.smallBuilds"><div class="projectTop"><span>{{ project.number }}</span><b>{{ project.label }}</b></div><h3>{{ project.name }}</h3><p>{{ project.description }}</p><div class="tags inkTags">@for (tag of project.tags; track tag) { <span>{{ tag }}</span> }</div></article>
+    }
+  </div></section>
+
+  <section class="credentials section"><div class="shell"><div class="sectionLabel">04 / EDUCATION &amp; TRAINING</div><div class="credentialGrid"><article class="educationCard"><span>2019 — 2023</span><h2>B.Tech in Computer Science &amp; Engineering</h2><h3>Baba Farid College of Engineering and Technology, Deon</h3><p>A four-year foundation in computer science, software engineering, problem solving, and modern development practices.</p></article><div class="trainingList"><h3>Professional Training</h3>
+    @for (training of trainings; track training.title) { <article><span>{{ training.number }}</span><div><h4>{{ training.title }}</h4><p>{{ training.provider }}</p></div></article> }
+  </div></div></div></section>
+
+  <section class="skills shell section" id="skills"><div class="sectionLabel">05 / TOOLKIT</div><div class="skillsHeading"><h2>Tools I use to turn<br>ideas into <em>products.</em></h2><p>Deepening my core stack every day, while steadily expanding into adjacent technologies.</p></div><div class="skillGrid">
+    @for (skill of skills; track skill.name; let index = $index) { <article><span>0{{ index + 1 }}</span><div [class]="'skillIcon s' + index">{{ skill.name.slice(0, 2) }}</div><h3>{{ skill.name }}</h3><p>{{ skill.level }}</p></article> }
+  </div></section>
+
+  <section class="contact shell" id="contact"><span class="contactKicker">HAVE A PROJECT OR OPPORTUNITY?</span><h2>Let&apos;s build something<br><em>worth using.</em></h2><p>I&apos;m open to thoughtful conversations, challenging work, and opportunities to grow.</p><div class="contactActions"><a class="emailBtn" href="mailto:pinkukaur0803@gmail.com">Email me <span>↗</span></a></div><small>Bathinda, Punjab · Available by email</small></section>
+  <footer class="shell"><div class="brand"><span>PK</span><b>Pinki Kaur</b></div><p>Full Stack Web Developer · Built with Angular</p><a href="#top">Back to top ↑</a></footer>
+</main>
