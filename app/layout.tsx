@@ -6,17 +6,17 @@ const manrope = Manrope({ variable: '--font-manrope', subsets: ['latin'] });
 const mono = DM_Mono({ variable: '--font-mono', weight: ['300','400','500'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Full Stack Web Developer | Portfolio',
-  description: 'Portfolio of a Full Stack Web Developer specializing in Angular, Node.js, and MongoDB.',
-  metadataBase: new URL(process.env.SITE_URL ?? 'http://localhost:3000'),
+  metadataBase: new URL('https://full-stack-developer-portfolio.pinkukaur0803.chatgpt.site'),
+  title: 'Pinki Kaur | Full Stack Web Developer',
+  description: 'Portfolio of Pinki Kaur, a Full Stack Web Developer specializing in Angular, Node.js, and MongoDB.',
   openGraph: {
-    title: 'Full Stack Web Developer',
+    title: 'Pinki Kaur | Full Stack Web Developer',
     description: 'Angular · Node.js · MongoDB',
-    images: [{ url: '/og.png', width: 1536, height: 1024, alt: 'Full Stack Web Developer portfolio' }],
+    images: [{ url: '/og.png', width: 1536, height: 1024, alt: 'Pinki Kaur — Full Stack Web Developer' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Full Stack Web Developer',
+    title: 'Pinki Kaur | Full Stack Web Developer',
     description: 'Angular · Node.js · MongoDB',
     images: ['/og.png'],
   },
