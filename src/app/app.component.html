@@ -37,7 +37,22 @@
 
   <section class="projects shell section" id="projects"><div class="sectionLabel">03 / SELECTED PROJECTS</div><div class="projectsHeading"><h2>Products shaped by<br><em>real-world needs.</em></h2><p>Full-stack work spanning inventory, education, customer relationships, and small-business experiences.</p></div><div class="projectGrid">
     @for (project of projects; track project.name) {
-      <article class="projectCard" [class.featured]="project.featured" [class.smallBuilds]="project.smallBuilds"><div class="projectTop"><span>{{ project.number }}</span><b>{{ project.label }}</b></div><h3>{{ project.name }}</h3><p>{{ project.description }}</p><div class="tags inkTags">@for (tag of project.tags; track tag) { <span>{{ tag }}</span> }</div></article>
+      <article class="projectCard" [class.featured]="project.featured" [class.smallBuilds]="project.smallBuilds" [class.caseStudy]="project.highlights?.length">
+        <div class="projectIdentity">
+          <div class="projectTop"><span>{{ project.number }}</span><b>{{ project.label }}</b></div>
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          @if (project.url) { <a class="projectLink" [href]="project.url" target="_blank" rel="noreferrer">View platform <span aria-hidden="true">↗</span></a> }
+        </div>
+        <div class="projectContent">
+          @if (project.highlights?.length) {
+            <ul class="projectHighlights">
+              @for (highlight of project.highlights; track highlight) { <li>{{ highlight }}</li> }
+            </ul>
+          }
+          <div class="tags inkTags">@for (tag of project.tags; track tag) { <span>{{ tag }}</span> }</div>
+        </div>
+      </article>
     }
   </div></section>
 
